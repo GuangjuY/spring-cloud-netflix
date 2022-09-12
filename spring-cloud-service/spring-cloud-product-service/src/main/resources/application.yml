@@ -1,0 +1,10 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: spring-cloud-product-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
