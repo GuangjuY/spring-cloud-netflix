@@ -15,7 +15,6 @@
         <module>spring-cloud-log</module>
         <module>spring-cloud-redis</module>
         <module>spring-cloud-sms</module>
-        <module>spring-cloud-utils</module>
         <module>spring-cloud-file</module>
         <module>spring-cloud-datasource</module>
     </modules>
