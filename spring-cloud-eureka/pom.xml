@@ -4,7 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.mochen</groupId>
+    <parent>
+        <groupId>com.mochen</groupId>
+        <artifactId>spring-cloud-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
     <artifactId>spring-cloud-eureka</artifactId>
     <version>1.0.0</version>
 
@@ -12,7 +17,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-            <version>1.4.6.RELEASE</version>
         </dependency>
     </dependencies>
 
