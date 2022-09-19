@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: user-service
+  cloud:
+    config:
+      name: user-service
+      uri: http://localhost:3344
+      label: main
