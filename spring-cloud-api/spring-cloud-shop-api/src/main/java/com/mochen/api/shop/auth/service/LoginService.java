@@ -1,4 +1,4 @@
-package com.mochen.api.shop.auth.api;
+package com.mochen.api.shop.auth.service;
 
 import com.mochen.api.shop.auth.request.LoginByPasswordRequest;
 import com.mochen.api.shop.auth.vo.LoginVO;

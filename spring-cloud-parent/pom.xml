@@ -37,6 +37,7 @@
         <httpclient.version>4.5</httpclient.version>
         <swagger.version>3.0.0</swagger.version>
         <swagger-bootstrap-ui.version>1.9.1</swagger-bootstrap-ui.version>
+        <mapstruct.version>1.5.1.Final</mapstruct.version>
     </properties>
 
     <repositories>
@@ -177,6 +178,23 @@
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>swagger-bootstrap-ui</artifactId>
                 <version>${swagger-bootstrap-ui.version}</version>
+            </dependency>
+
+            <!--mapstruct-->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-jdk8</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
             </dependency>
 
         </dependencies>
