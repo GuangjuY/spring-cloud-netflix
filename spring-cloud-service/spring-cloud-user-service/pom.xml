@@ -8,10 +8,14 @@
         <groupId>com.mochen</groupId>
         <artifactId>spring-cloud-parent</artifactId>
         <version>1.0.0</version>
+        <relativePath/>
     </parent>
 
-
     <artifactId>spring-cloud-user-service</artifactId>
+    <version>1.0.0</version>
+
+    <packaging>pom</packaging>
+
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
