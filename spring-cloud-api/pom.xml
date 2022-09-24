@@ -14,6 +14,7 @@
     <artifactId>spring-cloud-api</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
+
     <modules>
         <module>spring-cloud-admin-api</module>
         <module>spring-cloud-shop-api</module>
@@ -25,5 +26,4 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
 </project>

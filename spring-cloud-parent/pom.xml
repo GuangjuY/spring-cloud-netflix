@@ -35,6 +35,8 @@
         <tea-openapi.version>0.0.19</tea-openapi.version>
         <dysmsapi20170525.version>2.0.8</dysmsapi20170525.version>
         <httpclient.version>4.5</httpclient.version>
+        <swagger.version>3.0.0</swagger.version>
+        <swagger-bootstrap-ui.version>1.9.1</swagger-bootstrap-ui.version>
     </properties>
 
     <repositories>
@@ -54,13 +56,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--jackson-->
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>${jackson.version}</version>
-            </dependency>
-
             <!--fastjson-->
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -165,6 +160,23 @@
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>${httpclient.version}</version>
+            </dependency>
+
+            <!-- swagger -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>swagger-bootstrap-ui</artifactId>
+                <version>${swagger-bootstrap-ui.version}</version>
             </dependency>
 
         </dependencies>

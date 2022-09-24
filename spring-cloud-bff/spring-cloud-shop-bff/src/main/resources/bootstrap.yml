@@ -2,9 +2,9 @@ spring:
   profiles:
     active: dev
   application:
-    name: user-service
+    name: shop-bff
   cloud:
     config:
-      name: user-service
+      name: shop-bff
       uri: http://localhost:3344
       label: master
