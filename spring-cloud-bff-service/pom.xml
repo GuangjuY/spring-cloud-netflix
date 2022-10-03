@@ -11,16 +11,12 @@
         <relativePath/>
     </parent>
 
-    <artifactId>spring-cloud-spi</artifactId>
-    <version>1.0.0</version>
-
+    <artifactId>spring-cloud-bff-service</artifactId>
     <packaging>pom</packaging>
-
+    <version>1.0.0</version>
     <modules>
-        <module>spring-cloud-order-spi</module>
-        <module>spring-cloud-product-spi</module>
-        <module>spring-cloud-user-spi</module>
-        <module>spring-cloud-spi-service</module>
+        <module>spring-cloud-admin-bff</module>
+        <module>spring-cloud-shop-bff</module>
     </modules>
 
     <properties>
