@@ -14,8 +14,6 @@
     <artifactId>spring-cloud-log</artifactId>
     <version>1.0.0</version>
 
-    <packaging>pom</packaging>
-
 
 
 </project>

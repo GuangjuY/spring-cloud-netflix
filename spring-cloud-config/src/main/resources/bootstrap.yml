@@ -7,9 +7,9 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/mochen268/spring-cloud-config.git
-          username: yao_guangju@163.com
-          password: ygj125159
+          uri: https://codeup.aliyun.com/633c3b130e55ca746597f25d/infrastructure/spring-cloud-config.git
+          username: yaoguangju
+          password: Ygj125159#
 eureka:
   client:
     service-url:
