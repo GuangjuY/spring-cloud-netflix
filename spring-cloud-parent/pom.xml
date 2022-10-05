@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
+        <artifactId>spring-boot-dependencies</artifactId>
         <version>2.3.12.RELEASE</version>
         <relativePath/>
     </parent>
@@ -38,6 +38,7 @@
         <swagger.version>3.0.0</swagger.version>
         <swagger-bootstrap-ui.version>1.9.1</swagger-bootstrap-ui.version>
         <mapstruct.version>1.5.1.Final</mapstruct.version>
+        <spring-boot-maven-verison>2.4.6</spring-boot-maven-verison>
     </properties>
 
     <dependencyManagement>
@@ -181,7 +182,6 @@
                 <artifactId>mapstruct-processor</artifactId>
                 <version>${mapstruct.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 
