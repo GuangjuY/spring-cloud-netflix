@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: admin-bff
+  cloud:
+    config:
+      name: admin-bff
+      uri: http://localhost:3344
+      label: master

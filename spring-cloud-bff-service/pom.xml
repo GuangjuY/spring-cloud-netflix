@@ -16,7 +16,7 @@
     <version>1.0.0</version>
     <modules>
         <module>spring-cloud-admin-bff</module>
-        <module>spring-cloud-shop-bff</module>
+        <module>spring-cloud-front-bff</module>
     </modules>
 
     <properties>

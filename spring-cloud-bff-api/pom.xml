@@ -17,8 +17,8 @@
 
     <modules>
         <module>spring-cloud-admin-api</module>
-        <module>spring-cloud-shop-api</module>
-        <module>spring-cloud-api-service</module>
+        <module>spring-cloud-front-api</module>
+        <module>spring-cloud-bff-api-service</module>
     </modules>
 
     <properties>

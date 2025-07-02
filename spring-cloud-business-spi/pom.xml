@@ -20,7 +20,7 @@
         <module>spring-cloud-order-spi</module>
         <module>spring-cloud-product-spi</module>
         <module>spring-cloud-user-spi</module>
-        <module>spring-cloud-spi-service</module>
+        <module>spring-cloud-business-spi-service</module>
     </modules>
 
     <properties>
