@@ -3,19 +3,33 @@ spring:
   profiles: dev
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/user-service/**
+          filters:
+            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+        - id: order-service
+          uri: lb://order-service
+          predicates:
+            - Path=/order-service/**
+          filters:
+            - RewritePath=/order-service/(?<segment>.*), /$\{segment}
 logging:
   level:
     org.springframework.web: TRACE
 
 # SpringDoc 的配置
-# Java 配置类将会动态地填充分组
 springdoc:
   swagger-ui:
-    urls: [] # 此处留空，由下面的 GroupedOpenApi Bean 动态填充
+    path: /swagger-ui.html
+    urls:
+      - name: 用户服务
+        url: /user-service/v3/api-docs
+      - name: 订单服务
+        url: /order-service/v3/api-docs
+
 
 server:
   port: 8080
