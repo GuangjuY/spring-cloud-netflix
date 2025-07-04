@@ -1,4 +1,4 @@
-package com.mochen.message;
+package com.mochen.gateway;
 
 
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package com.mochen.api.front.auth.response;
+package com.mochen.front.restful.auth.response;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

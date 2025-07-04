@@ -1,7 +1,7 @@
 package com.mochen.front.infrastructure.mapstruct.auth;
 
 
-import com.mochen.api.front.auth.response.LoginByPasswordResponse;
+import com.mochen.front.restful.auth.response.LoginByPasswordResponse;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

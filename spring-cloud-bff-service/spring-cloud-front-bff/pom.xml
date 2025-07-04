@@ -22,11 +22,6 @@
     <dependencies>
         <dependency>
             <groupId>com.mochen</groupId>
-            <artifactId>spring-cloud-front-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.mochen</groupId>
             <artifactId>spring-cloud-user-spi</artifactId>
             <version>1.0.0</version>
         </dependency>
@@ -55,6 +50,10 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-feign</artifactId>
             <version>1.4.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
         </dependency>
         <!--mapstruct-->
         <dependency>

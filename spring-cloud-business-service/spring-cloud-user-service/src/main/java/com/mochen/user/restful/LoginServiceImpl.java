@@ -18,7 +18,6 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public LoginResponse login(@RequestBody LoginRequest loginRequest) {
-        log.error("1111111111111111111");
         LoginResponse loginResponse = new LoginResponse();
         loginResponse.setUserId("1232").setName("小明dto").setToken("987876543");
         return loginResponse;

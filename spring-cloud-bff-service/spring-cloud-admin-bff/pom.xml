@@ -20,11 +20,6 @@
     <dependencies>
         <dependency>
             <groupId>com.mochen</groupId>
-            <artifactId>spring-cloud-admin-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.mochen</groupId>
             <artifactId>spring-cloud-user-spi</artifactId>
             <version>1.0.0</version>
         </dependency>
@@ -38,8 +33,8 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
