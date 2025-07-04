@@ -21,14 +21,12 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jackson.version>2.13.4</jackson.version>
-        <hutool-all.version>5.7.14</hutool-all.version>
+        <hutool-all.version>5.8.26</hutool-all.version>
         <mybatis-plus-boot-starter.version>3.4.0</mybatis-plus-boot-starter.version>
         <mybatis-plus-generator.version>3.5.1</mybatis-plus-generator.version>
         <velocity-engine-core.version>2.3</velocity-engine-core.version>
-        <lombok.version>1.18.16</lombok.version>
+        <lombok.version>1.18.30</lombok.version>
         <spring-cloud.version>2021.0.9</spring-cloud.version>
-        <druid-spring-boot-starter.version>1.2.6</druid-spring-boot-starter.version>
         <httpclient.version>4.5</httpclient.version>
         <springdoc-openapi-ui.version>1.8.0</springdoc-openapi-ui.version>
         <mapstruct.version>1.5.1.Final</mapstruct.version>
@@ -81,13 +79,6 @@
                 <version>${lombok.version}</version>
             </dependency>
 
-            <!-- Druid -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${druid-spring-boot-starter.version}</version>
-            </dependency>
-
             <!-- httpclient -->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
@@ -118,6 +109,7 @@
                 <artifactId>mapstruct-processor</artifactId>
                 <version>${mapstruct.version}</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
