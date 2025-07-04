@@ -24,7 +24,11 @@ logging:
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
-    urls: []
+    urls:
+      - name: 用户服务
+        url: /user-service/v3/api-docs
+      - name: 订单服务
+        url: /order-service/v3/api-docs
 
 
 server:
