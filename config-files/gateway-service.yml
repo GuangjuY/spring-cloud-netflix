@@ -24,23 +24,10 @@ logging:
     org.springframework.web: TRACE
 
 # SpringDoc 的配置
+# Java 配置类将会动态地填充分组
 springdoc:
   swagger-ui:
-    # 在UI的下拉列表中定义每个微服务的文档地址
-    # Spring Cloud Gateway会根据路由规则将这些路径代理到下游服务
-    urls:
-      - name: 用户服务 (User Service) # 在UI下拉框中显示的名字
-        url: /v3/api-docs/user-service # 这个路径会匹配到下面的 'urls-groups'
-      - name: 订单服务 (Order Service)
-        url: /v3/api-docs/order-service
-
-  # 动态地将上面的url映射到具体服务
-  # 这部分在某些版本中可能需要一个自定义的Java配置Bean来动态生成
-  # 但通常可以通过路由和路径配置实现
-  urls-groups:
-    # 当UI请求/v3/api-docs/user-service时，网关会从user-service服务拉取/v3/api-docs
-    user-service: user-service
-    order-service: order-service
+    urls: [] # 此处留空，由下面的 GroupedOpenApi Bean 动态填充
 
 server:
   port: 8080
