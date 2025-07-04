@@ -16,10 +16,36 @@ spring:
             - Path=/order-service/**
           filters:
             - RewritePath=/order-service/(?<segment>.*), /$\{segment}
-logging:
-  level:
-    org.springframework.web: TRACE
-
+        - id: product-service
+          uri: lb://product-service
+          predicates:
+            - Path=/product-service/**
+          filters:
+            - RewritePath=/product-service/(?<segment>.*), /$\{segment}
+        - id: message-service
+          uri: lb://message-service
+          predicates:
+            - Path=/message-service/**
+          filters:
+            - RewritePath=/message-service/(?<segment>.*), /$\{segment}
+        - id: sms-service
+          uri: lb://sms-service
+          predicates:
+            - Path=/sms-service/**
+          filters:
+            - RewritePath=/sms-service/(?<segment>.*), /$\{segment}
+        - id: admin-bff
+          uri: lb://admin-bff
+          predicates:
+            - Path=/admin-bff/**
+          filters:
+            - RewritePath=/admin-bff/(?<segment>.*), /$\{segment}
+        - id: front-bff
+          uri: lb://front-bff
+          predicates:
+            - Path=/front-bff/**
+          filters:
+            - RewritePath=/front-bff/(?<segment>.*), /$\{segment}
 # SpringDoc 的配置
 springdoc:
   swagger-ui:
@@ -29,8 +55,16 @@ springdoc:
         url: /user-service/v3/api-docs
       - name: 订单服务
         url: /order-service/v3/api-docs
-
-
+      - name: 商品服务
+        url: /product-service/v3/api-docs
+      - name: 消息服务
+        url: /message-service/v3/api-docs
+      - name: 短信服务
+        url: /sms-service/v3/api-docs
+      - name: 后台bff
+        url: /admin-bff/v3/api-docs
+      - name: 前台bff
+        url: /front-bff/v3/api-docs
 server:
   port: 8080
 eureka:
