@@ -1,0 +1,48 @@
+---
+spring:
+  profiles: dev
+  cloud:
+    gateway:
+      # 网关的路由规则
+      routes:
+        # 用户服务的路由
+        - id: user-service-route
+          uri: lb://user-service # lb:// 指向服务注册中心里的服务名
+          predicates:
+            - Path=/api/users/**
+          filters:
+            - StripPrefix=1 # 根据你的路径配置决定是否需要
+        # 订单服务的路由
+        - id: order-service-route
+          uri: lb://order-service
+          predicates:
+            - Path=/api/orders/**
+          filters:
+            - StripPrefix=1
+
+# SpringDoc 的配置
+springdoc:
+  swagger-ui:
+    # 在UI的下拉列表中定义每个微服务的文档地址
+    # Spring Cloud Gateway会根据路由规则将这些路径代理到下游服务
+    urls:
+      - name: 用户服务 (User Service) # 在UI下拉框中显示的名字
+        url: /v3/api-docs/user-service # 这个路径会匹配到下面的 'urls-groups'
+      - name: 订单服务 (Order Service)
+        url: /v3/api-docs/order-service
+
+  # 动态地将上面的url映射到具体服务
+  # 这部分在某些版本中可能需要一个自定义的Java配置Bean来动态生成
+  # 但通常可以通过路由和路径配置实现
+  urls-groups:
+    # 当UI请求/v3/api-docs/user-service时，网关会从user-service服务拉取/v3/api-docs
+    user-service: user-service
+    order-service: order-service
+
+server:
+  port: 8080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
