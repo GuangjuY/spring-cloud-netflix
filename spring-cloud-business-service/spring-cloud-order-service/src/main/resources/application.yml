@@ -1,10 +1,10 @@
 spring:
-  profiles:
-    active: dev
   application:
     name: order-service
+  profiles:
+    active: dev
+  config:
+    import: "configserver:http://localhost:3344"
   cloud:
     config:
-      name: order-service
-      uri: http://localhost:3344
       label: master

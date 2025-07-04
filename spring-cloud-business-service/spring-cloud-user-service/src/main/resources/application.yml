@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: user-service
+  profiles:
+    active: dev
+  config:
+    import: "configserver:http://localhost:3344"
+  cloud:
+    config:
+      label: master

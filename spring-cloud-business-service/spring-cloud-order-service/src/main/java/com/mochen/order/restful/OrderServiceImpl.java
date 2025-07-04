@@ -7,6 +7,7 @@ import com.mochen.spi.order.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -15,8 +16,8 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @Slf4j
+@RequestMapping("/order")
 public class OrderServiceImpl implements OrderService {
-
 
     @Override
     public List<OrderResponse> getOrderList(@RequestBody OrderRequest orderRequest) {

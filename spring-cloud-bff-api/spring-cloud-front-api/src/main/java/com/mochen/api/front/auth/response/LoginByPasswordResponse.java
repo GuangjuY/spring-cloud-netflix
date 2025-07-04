@@ -1,4 +1,4 @@
-package com.mochen.spi.user.response;
+package com.mochen.api.front.auth.response;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -6,8 +6,8 @@ import lombok.experimental.Accessors;
 
 @Data
 @Accessors(chain = true)
-@Schema(description = "登录Response")
-public class LoginResponse {
+@Schema(description = "登录响应")
+public class LoginByPasswordResponse {
 
     @Schema(description = "用户", example = "1464947847161376769")
     private String userId;

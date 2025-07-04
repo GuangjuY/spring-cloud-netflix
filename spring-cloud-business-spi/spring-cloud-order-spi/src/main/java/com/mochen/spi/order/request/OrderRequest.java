@@ -1,16 +1,15 @@
 package com.mochen.spi.order.request;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
 @Data
 @Accessors(chain = true)
-@ApiModel(description = "订单列表请求")
+@Schema(description = "订单列表请求")
 public class OrderRequest {
 
-    @ApiModelProperty(value = "用户id")
+    @Schema(description = "用户id")
     private String userId;
 
 }

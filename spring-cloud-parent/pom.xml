@@ -6,8 +6,8 @@
 
     <parent>
         <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>2.3.12.RELEASE</version>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.18</version>
         <relativePath/>
     </parent>
 
@@ -22,31 +22,28 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jackson.version>2.13.4</jackson.version>
-        <fastjson.version>1.2.31</fastjson.version>
         <hutool-all.version>5.7.14</hutool-all.version>
         <mybatis-plus-boot-starter.version>3.4.0</mybatis-plus-boot-starter.version>
         <mybatis-plus-generator.version>3.5.1</mybatis-plus-generator.version>
         <velocity-engine-core.version>2.3</velocity-engine-core.version>
         <lombok.version>1.18.16</lombok.version>
-        <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
+        <spring-cloud.version>2021.0.9</spring-cloud.version>
         <druid-spring-boot-starter.version>1.2.6</druid-spring-boot-starter.version>
-        <spring-cloud-starter-gateway.version>3.1.1</spring-cloud-starter-gateway.version>
-        <redisson-spring-boot-starter.version>3.16.8</redisson-spring-boot-starter.version>
         <httpclient.version>4.5</httpclient.version>
-        <swagger.version>3.0.0</swagger.version>
-        <swagger-bootstrap-ui.version>1.9.1</swagger-bootstrap-ui.version>
+        <springdoc-openapi-ui.version>1.8.0</springdoc-openapi-ui.version>
         <mapstruct.version>1.5.1.Final</mapstruct.version>
-        <spring-boot-maven-verison>2.4.6</spring-boot-maven-verison>
 
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!--fastjson-->
+            <!-- spring cloud -->
             <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>${fastjson.version}</version>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
 
             <!--hutool-->
@@ -84,34 +81,11 @@
                 <version>${lombok.version}</version>
             </dependency>
 
-            <!-- spring cloud -->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
             <!-- Druid -->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid-spring-boot-starter.version}</version>
-            </dependency>
-
-            <!--gateway-->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-gateway</artifactId>
-                <version>${spring-cloud-starter-gateway.version}</version>
-            </dependency>
-
-            <!-- redisson -->
-            <dependency>
-                <groupId>org.redisson</groupId>
-                <artifactId>redisson-spring-boot-starter</artifactId>
-                <version>${redisson-spring-boot-starter.version}</version>
             </dependency>
 
             <!-- httpclient -->
@@ -123,19 +97,9 @@
 
             <!-- swagger -->
             <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>${swagger.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>${swagger.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>swagger-bootstrap-ui</artifactId>
-                <version>${swagger-bootstrap-ui.version}</version>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>1.8.0</version>
             </dependency>
 
             <!--mapstruct-->

@@ -2,12 +2,14 @@ package com.mochen.product.restful;
 
 import com.mochen.spi.product.response.ProductResponse;
 import com.mochen.spi.product.service.ProductService;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@RequestMapping("/product")
 public class ProductServiceImpl implements ProductService {
 
     @Override
