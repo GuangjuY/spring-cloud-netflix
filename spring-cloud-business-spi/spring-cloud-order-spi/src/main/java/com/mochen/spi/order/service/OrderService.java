@@ -11,7 +11,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
@@ -20,7 +19,6 @@ import java.util.List;
  * 订单接口
  */
 @Tag(name = "订单相关API", description = "用于查询和管理用户订单的接口")
-@RequestMapping("/order")
 public interface OrderService {
 
     @Operation(

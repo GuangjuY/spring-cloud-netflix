@@ -22,12 +22,17 @@
     <dependencies>
         <dependency>
             <groupId>com.mochen</groupId>
+            <artifactId>spring-cloud-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mochen</groupId>
             <artifactId>spring-cloud-log</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.mochen</groupId>
-            <artifactId>spring-cloud-order-spi</artifactId>
+            <artifactId>spring-cloud-sms-spi</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>

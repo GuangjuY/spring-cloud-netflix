@@ -11,7 +11,6 @@
         <relativePath/>
     </parent>
 
-
     <artifactId>spring-cloud-product-service</artifactId>
     <version>1.0.0</version>
 
@@ -21,6 +20,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.mochen</groupId>
+            <artifactId>spring-cloud-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <dependency>
             <groupId>com.mochen</groupId>
             <artifactId>spring-cloud-log</artifactId>
