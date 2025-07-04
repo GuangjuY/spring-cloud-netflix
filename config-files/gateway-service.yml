@@ -40,7 +40,7 @@ springdoc:
     order-service: order-service
 
 server:
-  port: 8080
+  port: 8081
 eureka:
   client:
     service-url:
