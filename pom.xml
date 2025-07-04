@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mochen</groupId>
+    <artifactId>spring-cloud-netflix</artifactId>
+    <version>1.0.0</version>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>spring-cloud-bff-service</module>
+        <module>spring-cloud-business-service</module>
+        <module>spring-cloud-business-spi</module>
+        <module>spring-cloud-component</module>
+        <module>spring-cloud-config</module>
+        <module>spring-cloud-eureka</module>
+        <module>spring-cloud-gateway</module>
+        <module>spring-cloud-infrastucture-service</module>
+        <module>spring-cloud-infrastucture-spi</module>
+        <module>spring-cloud-parent</module>
+    </modules>
+
+
+</project>
